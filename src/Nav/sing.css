@@ -1,0 +1,173 @@
+body {
+  background: #e9f0f2;
+  font-family: Arial, sans-serif;
+
+
+ 
+}
+.header {
+  background: #18b9b7;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.container {
+  width: 55%;
+  background: white;
+  padding: 35px;
+  margin: 40px auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  
+}
+
+.row {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.row label {
+  width: 160px;
+  font-weight: bold;
+}
+
+.row input,
+.row select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  outline: none;
+}
+
+.note {
+  font-size: 13px;
+  color: gray;
+  margin-left: 160px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.login-text {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login-text a {
+  color: #18b9b7;
+  text-decoration: none;
+}
+
+.otp-row {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.otp-options {
+  text-align: center;
+  margin: 8px 0;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn {
+  background: #e67a18;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  font-size: 16px;
+  display: block;
+  margin: 25px auto;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #d26512;
+}
+/* 🌐 Responsive Design */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .container {
+    width: 70%;
+    padding: 30px;
+  }
+
+  .row label {
+    width: 140px;
+    font-size: 14px;
+  }
+
+  .row input,
+  .row select {
+    padding: 9px;
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+
+  .otp-options {
+    gap: 20px;
+    font-size: 13px;
+  }
+
+  .note {
+    margin-left: 140px;
+    font-size: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 25px;
+    margin: 20px auto;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .row label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .row input,
+  .row select {
+    width: 100%;
+  }
+
+  .note {
+    margin-left: 0;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .otp-options {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

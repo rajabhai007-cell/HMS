@@ -1,0 +1,60 @@
+/* 🌐 Client Review Section */
+.client-review {
+  padding: 20px 10%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row; /* side by side on large screens */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px; /* space between text and image */
+  margin-top: 30px;
+}
+
+/* Section Heading */
+.client-review h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+/* Client Rating Badge */
+.client-rating img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect on rating badge */
+.client-rating img:hover {
+  transform: scale(1.1);
+}
+
+/* 🌐 Responsive Design */
+@media (max-width: 1024px) {
+  .client-review h2 {
+    font-size: 2rem;
+  }
+
+  .client-rating img {
+    width: 120px;
+  }
+}
+
+/* 📱 Small screens — stack vertically */
+@media (max-width: 768px) {
+  .client-review {
+    flex-direction: column; /* now stacked */
+    gap: 10px;
+  }
+
+  .client-review h2 {
+    font-size: 1.7rem;
+  }
+
+  .client-rating img {
+    width: 100px;
+  }
+}

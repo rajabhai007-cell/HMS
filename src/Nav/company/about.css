@@ -1,0 +1,407 @@
+/* 🌐 Global Section */
+.about-section {
+  padding: 40px 30px;
+  background-color: #ffffff;
+  color: #222;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+/* 🌐 Breadcrumb Styling (Header Top Area) */
+.breadcrumb {
+  position: absolute;
+  top: 80px; /* Adjust this to fit below your header */
+  left: 60px; /* Space from left edge */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+  z-index: 10;
+}
+
+/* Home link */
+.breadcrumb .home-link {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb .home-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Separator (›) */
+.breadcrumb .separator {
+  color: #999;
+  font-weight: 600;
+}
+
+/* Active page (About Us) */
+.breadcrumb .active {
+  color: #222;
+  font-weight: 600;
+}
+
+/* Responsive: Slight reposition on small screens */
+@media (max-width: 768px) {
+  .breadcrumb {
+    top: 60px;
+    left: 20px;
+    font-size: 14px;
+  }
+}
+
+
+
+.home-link {
+  color: #f7941d;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.separator {
+  margin: 0 8px;
+  color: #999;
+}
+
+.active {
+  color: #000;
+  font-weight: 600;
+}
+
+/* 🏥 About Text */
+.about-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-text h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+/* 📊 Stats Section */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.stat-card {
+  background: #fef7ef;
+  border-radius: 15px;
+  padding: 20px;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  background: #fff3e6;
+}
+
+.stat-icon {
+  color: #f7941d;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 8px;
+}
+
+/* 🩺 About Intro */
+.about-intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 60px 0;
+  gap: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+
+.about-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-right {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.about-right img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.since-badge {
+  display: inline-block;
+  background: #f7941d;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.about-left h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+/* 🌈 Vision Section */
+.about-vision {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 80px 0;
+  gap: 40px;
+  font-size: 110%;
+  font-weight: bold;
+
+}
+
+.vision-left,
+.vision-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.vision-left img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+}
+
+.vision-badge {
+  background: #fff3e6;
+  color: #f7941d;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 5px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.vision-right h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+/* 🚀 Mission Section */
+.mission-section {
+  margin-top: 80px;
+  padding: 50px 30px;
+  background: #fef7ef;
+  border-radius: 15px;
+}
+
+.mission-subtitle {
+  color: #f7941d;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.mission-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.mission-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  color: #555;
+}
+
+.mission-item {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.mission-item:hover {
+  transform: translateY(-4px);
+  background: #fff3e6;
+}
+
+.mission-number {
+  background: #f7941d;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.mission-content h3 {
+  margin-bottom: 5px;
+  color: #1a1a1a;
+}
+
+/* 🏥 Healthcare Section */
+
+/* 🏥 Healthcare Section - 2x2 Grid */
+.healthcare-section {
+  padding: 80px 30px;
+  background: #fff;
+  text-align: center;
+}
+
+.healthcare-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.healthcare-section p {
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* 🧩 2x2 Grid Boxes */
+.healthcare-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.healthcare-box {
+  background: #fff3e6;
+  border: 2px solid #f7941d;
+  border-radius: 15px;
+  padding: 35px 25px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.healthcare-box:hover {
+  background: #fef8f1;
+  transform: translateY(-6px);
+}
+
+.healthcare-box h3 {
+  font-size: 20px;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.healthcare-box p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* 📱 Responsive for Small Screens */
+@media (max-width: 768px) {
+  .healthcare-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* 📘 Brochure Section */
+.brochure-section {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #fff3e6;
+  border-radius: 15px;
+  padding: 50px 30px;
+  gap: 40px;
+}
+
+.brochure-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.brochure-right {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.brochure-right img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.download-btn {
+  background: #f7941d;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background: #d97e12;
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .about-text h1 {
+    font-size: 26px;
+  }
+
+  .about-intro,
+  .about-vision,
+  .healthcare-card,
+  .brochure-section {
+    flex-direction: column;
+  }
+
+  .mission-section {
+    padding: 30px 20px;
+  }
+
+  .mission-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mission-number {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

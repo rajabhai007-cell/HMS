@@ -1,0 +1,346 @@
+/* 🌟 SUCCESS SECTION */
+.success-section {
+  padding: 80px 100px;
+  background: #fff8f2; /* subtle orange-tinted background */
+  text-align: center;
+  color: #222;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 25px;
+  text-align: left;
+}
+.breadcrumb .arrow {
+  margin: 0 6px;
+  color: #ff7a00;
+}
+.breadcrumb span:first-child {
+  color: #ff7a00;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.breadcrumb span:first-child:hover {
+  color: #e86d00;
+}
+
+/* Header content */
+.success-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tag {
+  display: inline-block;
+  background: #ffe7d1;
+  color: #ff7a00;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.success-content h1 {
+  font-size: 2.4rem;
+  margin: 20px 0 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.highlight {
+  color: #ff7a00;
+}
+
+.success-content p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+/* Rating Logos */
+.rating-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.logo-card {
+  background: #fff;
+  padding: 18px 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(255, 122, 0, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(255, 122, 0, 0.25);
+}
+
+.logo-card img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.logo-text h4 {
+  color: #111;
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
+
+.logo-text p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Button */
+.explore-btn {
+  background: linear-gradient(90deg, #ff7a00, #f97316);
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: linear-gradient(90deg, #f97316, #e55f0e);
+  transform: translateY(-2px);
+}
+
+/* 🌟 LEADERS SECTION */
+.leaders-section {
+  margin-top: 80px;
+  background: #fff;
+  padding: 60px 100px;
+  border-top: 2px solid #ffe7d1;
+  text-align: center;
+}
+
+.leaders-section h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+/* Cards */
+.leader-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 25px;
+}
+
+.leader-card {
+  background: #fff8f2;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(255, 122, 0, 0.15);
+  padding: 25px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  border: 1px solid #ffe7d1;
+}
+
+.leader-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(255, 122, 0, 0.25);
+}
+
+.hospital-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background: #fff;
+}
+
+.quote {
+  font-style: italic;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.stars {
+  color: #ff7a00;
+  margin-bottom: 8px;
+}
+
+.author {
+  font-weight: 600;
+  color: #222;
+}
+
+.hospital {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.card-bottom h3 {
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.card-bottom p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.card-bottom .tag {
+  background: #ffe7d1;
+  color: #ff7a00;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* 🌟 Success Header Navigation */
+.success-header {
+  margin: 25px 0 40px;
+}
+
+.success-header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.success-header li {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  padding-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.success-header li:hover,
+.success-header li.active {
+  color: #ff7a00;
+}
+
+.success-header li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #ff7a00;
+  transition: width 0.3s ease;
+}
+
+.success-header li:hover::after,
+.success-header li.active::after {
+  width: 100%;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #ff7a00, #f97316);
+  border-radius: 16px;
+  padding: 60px 30px;
+  color: #fff;
+  text-align: center;
+  margin: 50px auto;
+  width: 85%;
+  position: relative;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.transparenttextures.com/patterns/hexellence.png");
+  opacity: 0.1;
+}
+
+.cta-content h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+  color: #fff;
+  opacity: 0.95;
+}
+
+.cta-btn {
+  background: #fff;
+  color: #ff7a00;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #fff4e6;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .success-section,
+  .leaders-section {
+    padding: 60px 40px;
+  }
+
+  .success-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .leaders-section h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .success-section,
+  .leaders-section {
+    padding: 50px 20px;
+  }
+
+  .leader-card {
+    padding: 20px;
+  }
+
+  .logo-card {
+    width: 100%;
+    justify-content: center;
+  }
+}

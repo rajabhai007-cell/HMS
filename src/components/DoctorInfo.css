@@ -1,0 +1,137 @@
+/* 🌐 Testimonial Section */
+.testimonial-section {
+  padding: 60px 10%;
+  background-color: #fff; /* soft background */
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-color: beige;
+}
+
+/* Header: Doctor Image + Info */
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-left .doctor-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff6c25;
+}
+.read-more {
+  align-self: center; /* ✅ center it for all screen sizes */
+  text-decoration: none;
+  color: #ff6c25;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.header-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hospital-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.reviewer-name {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.reviewer-role {
+  font-size: 0.95rem;
+  color: #888;
+}
+
+/* Testimonial Content */
+.testimonial-content {
+  position: relative;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  padding-left: 40px;
+}
+
+.quote.start {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  font-size: 2rem;
+  color: #ff6c25;
+}
+
+.quote.end {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 2rem;
+  color: #ff6c25;
+}
+
+/* Read More Link */
+.read-more {
+  align-self: flex-start;
+  text-decoration: none;
+  color: #ff6c25;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* 🌐 Responsive Design */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .testimonial-header {
+    gap: 15px;
+  }
+
+  .hospital-name {
+    font-size: 1.3rem;
+  }
+
+  .reviewer-name {
+    font-size: 1rem;
+  }
+
+  .reviewer-role {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .testimonial-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .testimonial-content {
+    padding-left: 20px;
+  }
+
+  .quote.start {
+    top: -5px;
+    left: 0;
+  }
+
+  .read-more {
+    align-self: center;
+  }
+}

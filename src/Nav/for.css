@@ -1,0 +1,56 @@
+.fp-wrapper {
+  width: 90%;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+}
+
+.fp-title {
+  text-align: center;
+  color: #18b9b7;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.fp-container {
+  border: 1px solid #18b9b7;
+  padding: 25px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.fp-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.fp-steps p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.fp-input {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  margin: 25px auto;
+  display: block;
+  outline: none;
+  font-size: 15px;
+}
+
+.fp-btn {
+  background: #e67a18;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+.fp-btn:hover {
+  background: #c76614;
+}

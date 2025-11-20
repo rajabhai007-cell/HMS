@@ -1,0 +1,235 @@
+/* ---------------- FOOTER ---------------- */
+.footer {
+  background: #fff;
+  padding: 60px 80px;
+  border-top: 1px solid #eee;
+  padding-bottom: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  max-width: 300px;
+}
+
+.footer-logo {
+  font-size: 36px;
+  color: #ff6c25;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer-left h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.footer-left p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 18px;
+  line-height: 22px;
+}
+
+/* Social Icons */
+.social-icons i {
+  font-size: 22px;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.social-icons i:hover {
+  color: #ff6c25;
+}
+
+/* Store Buttons */
+.store-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;       /* ✅ space between both images */
+  margin-bottom: 25px;
+}
+
+/* Optional: Make both images same size */
+.store-buttons img {
+  height: 40px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .store-buttons {
+    justify-content: center;
+  }
+}
+/* Footer Links Section */
+.footer-links {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-links h4 {
+  font-size: 18px;
+  color: #ff6c25;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.footer-links p {
+  font-size: 14px;
+  color: #333;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.footer-links p:hover {
+  color: #ff6c25;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
+.footer-wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #1f2b32; /* IMPORTANT - same background box ke andar */
+}
+
+.footer-illustrations {
+  width: 100%;
+  display: flex;
+  justify-content: center;   /* center all images in one line */
+  align-items: center;
+  gap: 25px;                 /* equal spacing between images */
+  padding:  0;
+  background: #fff;          /* optional: remove if not needed */
+  flex-wrap: nowrap;         /* keep all images in one row */
+  overflow-x: auto;          /* allow scroll if screen is small */
+  margin: 0;
+}
+
+.footer-illustrations img {
+  height: 90px;             /* make all images equal size */
+  object-fit: contain;
+  flex-shrink: 0;
+  cursor: pointer;           /* optional */
+  transition: 0.3s;
+  display: block;
+  margin-bottom: 0 !important;
+  padding: 0;
+}
+
+.footer-illustrations img:hover {
+  transform: scale(1.08);    /* hover effect like professional UI */
+}
+
+/* Hide scrollbar for a cleaner look */
+
+.footer-illustrations::-webkit-scrollbar {
+  display: none;
+}
+/* Only footer country section background full width */
+.footer-bot {
+  background: #1f2b32;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding:  40px 0;
+}
+
+/* Country Names Centered + Small + Clean */
+.footer-countries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 18px;       /* row gap + column gap */
+  width: 100%;
+  font-size: 16px;     /* small */
+  font-weight: 350;
+  color: #ffffff;
+}
+
+/* Each Country Text */
+.footer-countries span {
+  cursor: pointer;
+  opacity: 0.85;
+  transition: 0.3s;
+}
+
+/* Hover */
+.footer-countries span:hover {
+  color: #ff7a00;
+  opacity: 1;
+}
+
+/* Divider | between items */
+.footer-countries span + span::before {
+  content: "|";          /* Dot looks cleaner than pipe */
+  margin: 0 8px;
+  font-size: 20px;
+  color: #ff7a00;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-countries {
+    font-size: 14px;     /* even smaller */
+    gap: 6px 12px;
+  }
+
+  .footer-countries span + span::before {
+    margin: 0 6px;
+    font-size: 12px;
+  }
+}
+
+
+.footer-bottom-row {
+  background: #1f2b32;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between; /* LEFT & RIGHT */
+  align-items: center;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+/* Footer Links LEFT */
+.footer-term a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-term a:hover {
+  color: #ff8c2a;
+}
+
+/* Copy RIGHT */
+.copy {
+  color: #ffffff;
+  margin-left: 20px;   /* ✅ little gap */
+  white-space: nowrap; /* ✅ so it does not break into 2 lines */
+}
+
+/* 📱 Hide on Mobile */
+@media (max-width: 768px) {
+  .footer-bottom-row {
+    display: none !important;
+  }
+}

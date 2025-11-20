@@ -1,0 +1,153 @@
+/* Page Layout */
+.login-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/login.png") center/cover no-repeat;
+  background-size: cover;
+  padding: 50px 20px;
+  margin: 0;
+}
+
+/* Container */
+.login-container {
+  display: flex;
+  width: 900px;
+  max-width: 95%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Left Feature Panel */
+.login-features {
+  flex: 1;
+  background: linear-gradient(to bottom, #1cb5e0, #000851);
+  color: #fff;
+  padding: 40px 30px;
+}
+
+.login-features h2 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.login-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.login-features li {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.login-features li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #fff;
+}
+
+/* Right Login Form */
+.login-form {
+  flex: 1;
+  padding: 40px 30px;
+}
+
+.login-form h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #1a1a1a;
+}
+
+.login-form p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #555;
+
+}
+
+.mobile-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.mobile-input select,
+.mobile-input input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button {
+  padding: 12px;
+  background-color: #ff6c25;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.login-form button:hover {
+  background-color: #e65c1a;
+}
+
+.or-separator {
+  text-align: center;
+  margin: 10px 0;
+  color: #999;
+}
+
+.password-login {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #1cb5e0;
+  border-radius: 5px;
+  background: #fff;
+  color: #1cb5e0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.password-login:hover {
+  background: #1cb5e0;
+  color: #fff;
+}
+
+.register-text {
+  margin-top: 15px;
+  text-align: center;
+  color: #555;
+}
+
+.register-link {
+  color: #ff6c25;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+     padding: 20px ;
+  }
+
+  .login-features {
+    text-align: center;
+   
+  }
+
+  .mobile-input {
+    flex-direction: column;
+  }
+}

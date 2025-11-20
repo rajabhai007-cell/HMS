@@ -1,0 +1,217 @@
+.partner-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 60px 80px;
+  background: #fdfdfd;
+}
+
+.partner-text {
+  flex: 1;
+}
+
+.partner-text h5 {
+  color: #ff7a00;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.partner-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.partner-text p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Product Cards */
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.product-card {
+  background: #fff3e5;
+  padding: 12px 18px;
+  border-radius: 10px;
+  flex: 1 1 calc(50% - 15px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h4 {
+  font-size: 1rem;
+  color: #ff7a00;
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  font-size: 0.85rem;
+  color: #333;
+}
+
+/* Right Side Image */
+.partner-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.partner-why-section {
+  padding: 60px 40px;
+  background: #f9f9f9;
+}
+
+.partner-why-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #ff7a00;
+}
+
+.partner-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.partner-card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  max-width: 400px;
+  flex: 1 1 300px; /* makes it responsive */
+}
+
+.partner-card h4 {
+  color: #ff7a00;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.partner-card h5 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.partner-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+/* 🌟 Partner Support Section */
+.partner-support-section {
+  padding: 60px 80px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.partner-support-section h2 {
+  font-size: 2rem;
+  color: #ff7a00;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* 🌟 Support Cards Container */
+.support-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* 🌟 Individual Support Card */
+.support-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+  flex: 1 1 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.support-card h4 {
+  color: #ff7a00;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.support-card p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* 🌟 Hover Effect */
+.support-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .partner-support-section {
+    padding: 40px 20px;
+  }
+
+  .support-cards {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .support-card {
+    max-width: 100%;
+  }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .partner-cards {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .partner-card {
+    max-width: 90%;
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+  .partner-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .product-card {
+    flex: 1 1 100%;
+  }
+
+  .partner-image {
+    margin-top: 30px;
+  }
+}
+

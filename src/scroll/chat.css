@@ -1,0 +1,65 @@
+/* 🌟 Chatbot Floating Button / Widget */
+.chatbot-btn {
+  position: fixed;
+  bottom: 25px;       /* distance from bottom */
+  right: 25px;        /* distance from right */
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+.chatbot-btn:hover {
+  transform: scale(1.12);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+/* Optional: Floating chat box container */
+.chatbot-box {
+  position: fixed;
+  bottom: 90px;      /* above the button */
+  right: 25px;
+  width: 320px;
+  max-height: 400px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  overflow: hidden;
+  display: none;      /* show/hide on button click via JS */
+  flex-direction: column;
+  z-index: 1000;
+}
+
+/* Example for the chat messages inside the box */
+.chatbot-box .chat-box {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.chatbot-box input {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 6px;
+  width: calc(100% - 16px);
+  margin: 10px;
+}
+
+.chatbot-box button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 0 10px 10px 10px;
+  cursor: pointer;
+}

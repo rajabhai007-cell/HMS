@@ -1,0 +1,263 @@
+.referral-section {
+  padding: 60px 100px;
+  background: #fff;
+  color: #1a1a1a;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🧭 Breadcrumb */
+.breadcrumb {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+.breadcrumb .home-link {
+  color: #f97316;
+  text-decoration: none;
+  font-weight: 500;
+}
+.breadcrumb .home-link:hover {
+  text-decoration: underline;
+}
+.breadcrumb .arrow {
+  margin: 0 8px;
+  color: #999;
+}
+
+/* 🌟 Main Content */
+.referral-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #fff4e6;
+  color: #f97316;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.highlight {
+  color: #f97316;
+  font-weight: 600;
+}
+
+.text-content h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.text-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.text-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* 🖼️ Image */
+.image-content img {
+  width: 420px;
+  border-radius: 10px;
+}
+
+/* 📱 App Buttons */
+.cta-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+.cta-buttons img {
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+.cta-buttons img:hover {
+  transform: scale(1.05);
+}
+
+/* 🎁 CTA Section */
+.referral-cta {
+  background: linear-gradient(90deg, #f97316, #ff9b45);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 80px;
+  border-radius: 16px;
+}
+
+.cta-content h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.cta-content p {
+  font-size: 17px;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+.cta-btn {
+  background: #fff;
+  color: #f97316;
+  border: none;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #fff4e6;
+  transform: translateY(-2px);
+}
+
+/* 🌍 Responsive */
+@media (max-width: 768px) {
+  .referral-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content {
+    max-width: 100%;
+  }
+
+  .image-content img {
+    width: 100%;
+  }
+}
+.referral-form-section {
+  background: #fffaf5;
+  padding: 80px 100px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  position: relative;
+}
+
+/* Header */
+.referral-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.referral-header p {
+  font-size: 1.2rem;
+  color: #f97316;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+/* Steps */
+.referral-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  gap: 40px;
+  position: relative;
+}
+
+.step-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  padding: 40px 30px;
+  text-align: center;
+  width: 300px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+  background: #f97316;
+  color: #fff;
+  font-weight: 700;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  font-size: 1.2rem;
+}
+
+.step-card h3 {
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.step-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.step-icon {
+  width: 60px;
+  height: 60px;
+  margin-top: 15px;
+}
+
+/* Curved connector between steps */
+.curve {
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, #f97316, #ffb067);
+  border-radius: 50px;
+  position: relative;
+}
+.curve::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: -6px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f97316;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .referral-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .curve {
+    display: none;
+  }
+
+  .step-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,11 @@
+symptom,description,precaution_1,precaution_2,precaution_3,precaution_4,severity
+fever,A temporary increase in body temperature often due to an illness or infection.,Drink plenty of fluids,Take rest,Monitor temperature,Consult doctor if persists,Moderate
+cough,A reflex action to clear your airways of mucus and irritants.,Drink warm fluids,Avoid cold drinks,Use cough syrup if severe,Consult a doctor if lasts more than a week,Mild
+headache,Pain in any region of the head, often caused by stress or dehydration.,Stay hydrated,Take rest,Avoid loud noises,Use mild pain reliever,Mild
+cold,A viral infection that affects the nose and throat, causing sneezing and congestion.,Drink warm water,Use steam inhalation,Avoid cold exposure,Rest well,Mild
+sore throat,Pain or irritation in the throat that often worsens when swallowing.,Gargle with warm salt water,Stay hydrated,Avoid spicy food,Use throat lozenges,Moderate
+fatigue,Extreme tiredness resulting from mental or physical exertion or illness.,Get enough sleep,Eat balanced diet,Avoid overexertion,Stay hydrated,Mild
+nausea,Feeling of sickness with an inclination to vomit.,Eat light meals,Avoid strong odors,Stay hydrated,Rest well,Moderate
+vomiting,Forceful release of stomach contents through the mouth.,Drink ORS,Rest your stomach,Eat bland food after vomiting,Consult doctor if persistent,Severe
+diarrhea,Frequent loose or watery bowel movements.,Drink ORS or electrolyte water,Avoid street food,Eat light meals,Consult doctor if severe,Severe
+body pain,Generalized muscle or joint aches throughout the body.,Rest well,Do light stretching,Take a warm bath,Use pain reliever if needed,Moderate

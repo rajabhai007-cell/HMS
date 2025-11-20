@@ -1,0 +1,131 @@
+/* 🌐 Page Layout */
+
+.login-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background: url("/login.png") center/cover 
+  no-repeat;
+  background-size: cover;
+}
+
+/* Container */
+.login-container {
+  display: flex;
+  width: auto;
+  max-width: 95%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: none;
+  padding: 0;
+ margin: 0;
+}
+
+/* Left Features */
+.login-features {
+  flex: 1;
+  background-color: #ff6c25;
+  color: #fff;
+  padding: 40px 30px;
+}
+
+.login-features h2 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.login-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.login-features li {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.login-features li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color:#fff;
+}
+
+/* Right Form */
+.login-form {
+  flex: 1;
+  padding: 40px 30px;
+}
+
+.login-form h2 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: #1a1a1a;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form input {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.password-input {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ff6c25;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.forgot-password {
+  font-size: 0.9rem;
+  color: #ff6c25;
+  text-align: right;
+  cursor: pointer;
+}
+
+.login-form button {
+  padding: 12px;
+  background-color: #ff6c25;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #e65c1a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .login-features {
+  display: none;
+  }
+}

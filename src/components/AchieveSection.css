@@ -1,0 +1,197 @@
+/* 🌐 Achieve Section Styling */
+.achieve-section {
+  padding: 0 5%;
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.achieve-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  
+}
+
+.achieve-section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  text-align: center;
+   margin-bottom: 10px;
+}
+
+/* 🧩 Features Container */
+.features-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+  position: relative;
+  width: 100%;
+  text-align: start;
+  margin-top: 10px;
+}
+
+/* 🔸 Vertical Divider Line */
+.features-container::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #ff6c25;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+/* 🔸 Orange Dot */
+.divider-dot {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 18px;
+  background-color: #ff6c25;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* 🧱 Feature Row */
+.feature-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2; /* keep above vertical line */
+}
+
+/* 🟢 Alternate layout (even rows reverse on desktop only) */
+.feature-row:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+/* ✍️ Feature Text */
+.feature-text {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-text h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.feature-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.feature-text li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* 🖼️ Feature Image */
+.feature-img-box {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* 🌐 Responsive Design */
+
+/* 💻 Tablets */
+@media (max-width: 1024px) {
+  .feature-row {
+    gap: 30px;
+  }
+
+  .feature-text {
+    text-align: left; /* ✅ Align text left */
+    align-items: flex-start; /* ✅ Align content to left */
+  }
+
+  .feature-text h3 {
+    font-size: 1.6rem;
+  }
+
+  .feature-text li {
+    font-size: 0.95rem;
+  }
+
+  .feature-image {
+    max-width: 350px;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  /* ✅ Stack text first, image second */
+  .feature-row,
+  .feature-row:nth-of-type(even) {
+    flex-direction: column; /* same order everywhere */
+    align-items: flex-start; /* ✅ left side alignment */
+    text-align: left; /* ✅ left text */
+    justify-content: flex-start;
+  }
+
+  .feature-text {
+    order: 1; /* text first */
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .feature-img-box {
+    order: 2; /* image after text */
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* ✅ keep image centered */
+  }
+
+  .feature-text ul {
+    padding-left: 20px;
+    list-style-position: outside;
+  }
+
+  .feature-image {
+    max-width: 90%;
+  }
+
+  /* Hide vertical line + dot on mobile */
+  .features-container::before,
+  .divider-dot {
+    display: none;
+  }
+}
